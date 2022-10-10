@@ -1,0 +1,97 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --cor1: #00000085;
+    --fonte-padrao: Calibri, Arial, Helvetica, sans-serif;
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-texto: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: var(--fonte-titulo);
+    /* text-transform: uppercase; *//* -> transforma todas as letras em maiúsculas */
+    font-variant: small-caps; /* -> transforma todas as letras em maiúsculas, modificando apenas o tamanho */
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte-texto);
+    font-size: 1.5em;
+    padding: 10vh 0px 10vh 30px;
+    line-height: 2em;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: black;
+    box-shadow: inset 6px 6px 13px 0px #00000071;
+    text-shadow: 2px 2px 2px #000000b7;
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: var(--cor1);
+    padding: 7px;
+}
+
+section#img1 {
+    background: url('../imgs/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+
+section#img2 {
+    background: url('../imgs/background002.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 0px;
+    text-align: center;
+    color: white;
+}
